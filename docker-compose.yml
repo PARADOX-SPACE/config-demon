@@ -6,4 +6,6 @@ services:
     container_name: config-updater
     volumes:
       - /home/kh/robust-hosting/ss14-watchdog/config.toml:/config.toml # Путь к конфигу должен быть правильный
+    env_file:
+      - stack.env
     restart: unless-stopped
