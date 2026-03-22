@@ -7,7 +7,7 @@ import requests
 import toml
 
 CDN_HOST = os.getenv("CDN_HOST")
-CDN_PORT = os.getenv("CDN_PORT")
+CDN_PORT = os.getenv("CDN_PORT", "8080")
 FORK_ID = os.getenv("FORK_ID", "paradox-fork")
 
 BASE_DIR = Path(__file__).resolve().parent
