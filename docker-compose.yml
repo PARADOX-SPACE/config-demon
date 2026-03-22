@@ -1,0 +1,9 @@
+version: "3.9"
+
+services:
+  python-config-demon:
+    build: .
+    container_name: config-updater
+    volumes:
+      - /home/kh/robust-hosting/ss14-watchdog/config.toml:/config.toml
+    restart: unless-stopped
