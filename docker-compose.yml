@@ -5,5 +5,5 @@ services:
     build: .
     container_name: config-updater
     volumes:
-      - /home/kh/robust-hosting/ss14-watchdog/config.toml:/config.toml
+      - /home/kh/robust-hosting/ss14-watchdog/config.toml:/config.toml # Путь к конфигу должен быть правильный
     restart: unless-stopped
